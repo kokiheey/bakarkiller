@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhmg02yj08vsm"]
+
+[ext_resource type="PackedScene" uid="uid://dxaeuj81xrhnn" path="res://scene.gltf" id="1_wra0c"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_f6oco"]
+radius = 0.798371
+
+[node name="bakar" type="RigidBody3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mass = 5.0
+inertia = Vector3(14.78, 0, 0)
+
+[node name="mesh" parent="." instance=ExtResource("1_wra0c")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.885036, 0, 0, 0, 0.885036, 0, 0, 0, 0.885036, 0.176153, 0, 0)
+shape = SubResource("SphereShape3D_f6oco")
