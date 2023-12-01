@@ -1,0 +1,9 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1701426608
+bakar.tscn::PackedScene::2902925524661675260::1701256001::0::1::::<><>::uid://dxaeuj81xrhnn
+icon.svg::CompressedTexture2D::4782689116098768546::1701256001::1701256006::1::::<><>::
+license.txt::TextFile::-1::1701256001::0::1::::<><>::
+main.tscn::PackedScene::3369794689709861360::1701260481::0::1::::<><>::uid://bg1cb11w0lgm8::::res://player.tscn
+player.gd::GDScript::-1::1701257033::0::1::::<>Node3D<>::
+player.tscn::PackedScene::2861352193711733369::1701257033::0::1::::<><>::res://player.gd
+scene.gltf::PackedScene::8773884563504642267::1701256001::1701256006::1::::<><>::
