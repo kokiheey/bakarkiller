@@ -1,6 +1,6 @@
 extends CharacterBody3D
 @onready var camera = $cameracomponent
-var bakar = preload("res://bakar.tscn")
+var bakar = preload("res://Resources/Models/copper/bakar.tscn")
 var rot_x = 0
 var rot_y = 0
 var speed = 10
