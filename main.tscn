@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://boama5kaq5alk"]
+[gd_scene load_steps=4 format=3 uid="uid://boama5kaq5alk"]
 
-[ext_resource type="PackedScene" uid="uid://bg1cb11w0lgm8" path="res://player.tscn" id="1_hjm0q"]
+[ext_resource type="PackedScene" uid="uid://bg1cb11w0lgm8" path="res://Assets/player.tscn" id="1_hjm0q"]
+[ext_resource type="PackedScene" uid="uid://c7nnehpstjn0f" path="res://Assets/Components/default_world.tscn" id="2_cv3n5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jqgrl"]
 
@@ -18,3 +19,5 @@ material = SubResource("StandardMaterial3D_jqgrl")
 
 [node name="player" parent="." instance=ExtResource("1_hjm0q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="DefaultWorld" parent="." instance=ExtResource("2_cv3n5")]

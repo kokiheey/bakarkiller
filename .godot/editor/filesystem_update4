@@ -1,3 +1,4 @@
-res://player.tscn
-res://player.gd
+res://Assets/player.tscn
 res://main.tscn
+res://Assets/player.gd
+res://Assets/Components/default_world.tscn

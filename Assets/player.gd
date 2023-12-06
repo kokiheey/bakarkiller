@@ -3,7 +3,7 @@ extends CharacterBody3D
 var bakar = preload("res://bakar.tscn")
 var rot_x = 0
 var rot_y = 0
-var speed = 5
+var speed = 10
 const move_speed = 5
 @export var sens = 0.005
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -30,6 +30,10 @@ func _input(event):
 		if event.is_action_pressed("click"):
 			var ciga = bakar.instantiate()
 			ciga.scale = Vector3(0.01, 0.01, 0.01)
-			ciga.transform.basis = transform.basis
-			ciga.linear_velocity = -transform.basis.z * speed
-			add_child(ciga)
+			get_parent().add_child(ciga)
+			ciga.position = position
+			ciga.position.z = position.z - 2
+			ciga.linear_velocity = -global_transform.basis.z * speed
+			ciga.global_transform.basis = global_transform.basis
+			
+			
