@@ -30,9 +30,10 @@ func _input(event):
 		if event.is_action_pressed("click"):
 			var ciga = bakar.instantiate()
 			ciga.scale = Vector3(0.01, 0.01, 0.01)
+			ciga.transform.basis = transform.basis
 			get_parent().add_child(ciga)
 			ciga.position = position
-			ciga.position.z = position.z - 2
+			ciga.global_transform.origin -= global_transform.basis.z *2
 			ciga.linear_velocity = -global_transform.basis.z * speed
 			ciga.global_transform.basis = global_transform.basis
 			
